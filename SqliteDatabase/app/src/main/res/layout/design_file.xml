@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/text_name" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:id="@+id/text_age" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Of Birth"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:id="@+id/text_dob" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:id="@+id/text_phone_number" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:id="@+id/text_email" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:id="@+id/text_password" />
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

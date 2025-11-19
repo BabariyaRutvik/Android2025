@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home">
+
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        tools:layout="@layout/fragment_home"
+        android:label="Home"
+        android:name="com.example.tripease.TripActivity.TripFragment.HomeFragment" />
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        tools:layout="@layout/fragment_profile"
+        android:label="Profile"
+        android:name="com.example.tripease.TripActivity.TripFragment.ProfileFragment" />
+
+
+    <fragment
+            android:id="@+id/nav_settings"
+            tools:layout="@layout/fragment_settings"
+            android:label="Settings"
+            android:name="com.example.tripease.TripActivity.TripFragment.SettingsFragment"/>
+
+    <fragment
+        android:id="@+id/nav_bookmark"
+        tools:layout="@layout/fragment_bookmark"
+        android:label="Bookmark"
+        android:name="com.example.tripease.TripActivity.TripFragment.BookmarkFragment" />
+
+
+
+
+
+</navigation>
