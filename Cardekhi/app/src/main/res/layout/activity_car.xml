@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2D2D2"
+    tools:context=".CarActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bmw_"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:id="@+id/bmw_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bmw"
+            android:layout_below="@id/bmw_image"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/bmw_text"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/audi"
+            android:layout_below="@id/bmw_text"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:id="@+id/audi_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audi"
+            android:layout_below="@id/audi_image"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/audi_text"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/toyota"
+            android:layout_below="@id/audi_text"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:id="@+id/toyota_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toyota"
+            android:layout_below="@id/toyota_image"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/toyota_text"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/skoda"
+            android:layout_below="@id/toyota_text"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:id="@+id/skoda_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skoda"
+            android:layout_below="@id/skoda_image"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/skoda_text"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/mahindra"
+            android:layout_below="@id/skoda_text"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:id="@+id/mahindra_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mahindra"
+            android:layout_below="@id/mahindra_image"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/mahindra_text"/>
+
+
+    </RelativeLayout>
+
+    
+    
+        
+        
+        
+
+</ScrollView>

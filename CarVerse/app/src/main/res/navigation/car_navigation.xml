@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/car_navigation"
+    app:startDestination="@id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        tools:layout="@layout/fragment_home"
+        android:name="com.example.carverse.CarActivity.CarFragment.HomeFragment"
+        android:label="Home"
+        />
+
+  <fragment
+      android:id="@+id/nav_brand"
+      tools:layout="@layout/fragment_brands"
+      android:name="com.example.carverse.CarActivity.CarFragment.BrandsFragment"
+      android:label="Brands"
+      />
+
+    <fragment
+        android:id="@+id/nav_car_list"
+        tools:layout="@layout/fragment_car_list"
+        android:name="com.example.carverse.CarActivity.CarFragment.CarListFragment"
+        android:label="Car List"
+        />
+
+    <fragment
+        android:id="@+id/nav_car_details"
+        tools:layout="@layout/fragment_car_details"
+        android:name="com.example.carverse.CarActivity.CarFragment.CarDetailsFragment"
+        android:label="Car Details"
+        />
+
+
+    <fragment
+        android:id="@+id/nav_wishlist"
+        tools:layout="@layout/fragment_wish_list"
+        android:name="com.example.carverse.CarActivity.CarFragment.WishListFragment"
+        android:label="Wishlist"
+        />
+
+
+    <fragment
+        android:id="@+id/nav_recently_view"
+        tools:layout="@layout/fragment_recently_viewed"
+        android:name="com.example.carverse.CarActivity.CarFragment.RecentlyViewedFragment"
+        android:label="Recently Viewed"/>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.example.carverse.CarActivity.CarFragment.ProfileFragment"
+        android:label="Profile"
+        />
+
+
+    <fragment
+        android:id="@+id/nav_settings"
+        tools:layout="@layout/fragment_settings"
+        android:name="com.example.carverse.CarActivity.CarFragment.SettingsFragment"
+        android:label="Settings"
+        />
+
+
+
+
+</navigation>

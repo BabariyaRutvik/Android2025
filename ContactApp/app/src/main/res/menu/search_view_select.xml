@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--item view for search the contact and select the contact-->
+
+    <item
+        android:id="@+id/search_contact"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/baseline_search_24"
+        />
+
+    <item
+        android:id="@+id/select_item"
+        android:title="Select"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/baseline_select_all_24"
+        />
+
+
+</menu>

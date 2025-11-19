@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Update the data"
+        android:layout_margin="25dp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:id="@+id/text_update"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_update"
+        android:layout_margin="20dp"
+        app:boxStrokeColor="#00796B"
+        app:hintTextColor="#F57C00"
+        android:id="@+id/text_input_product_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Name"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/edt_product_name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_product_name"
+        android:layout_margin="20dp"
+        app:boxStrokeColor="#00796B"
+        app:hintTextColor="#F57C00"
+        android:id="@+id/text_input_product_price">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Price"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/edt_product_price"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_product_price"
+        android:layout_margin="20dp"
+        app:boxStrokeColor="#00796B"
+        app:hintTextColor="#F57C00"
+        android:id="@+id/text_input_product_description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Description"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/edt_product_description"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_product_description"
+        android:layout_margin="30dp"
+        android:text="Update the Data"
+        android:backgroundTint="#1976D2"
+        android:id="@+id/update_data_btn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

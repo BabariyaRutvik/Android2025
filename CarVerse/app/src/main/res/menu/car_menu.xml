@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:id="@+id/nav_home"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Brand"
+        android:icon="@drawable/branding"
+        android:id="@+id/nav_brand"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Car List"
+        android:icon="@drawable/carlist"
+        android:id="@+id/nav_car_list"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Car Details"
+        android:icon="@drawable/details"
+        android:id="@+id/nav_car_details"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Wish List"
+        android:icon="@drawable/fevorite"
+        app:showAsAction="always"
+        android:id="@+id/nav_wishlist"/>
+
+    <item
+        android:title="Recently View"
+        android:icon="@drawable/recently_view"
+        app:showAsAction="always"
+        android:id="@+id/nav_recently_view"/>
+
+
+    <item
+        android:title="Profile"
+        android:icon="@drawable/profile"
+        app:showAsAction="always"
+        android:id="@+id/nav_profile"/>
+
+    <item
+        android:title="Settings"
+        android:icon="@drawable/settings"
+        app:showAsAction="always"
+        android:id="@+id/nav_settings"/>
+</menu>

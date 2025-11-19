@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="Name"
+        android:id="@+id/name_user"
+        android:icon="@drawable/outline_10k_24"
+        />
+</menu>

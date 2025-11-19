@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="15dp"
+            android:id="@+id/pizza_cardview"
+             app:cardBackgroundColor="#D2D2D2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pizza"
+                    app:civ_border_color="#FFA000"
+                    app:civ_border_width="2.5dp"
+                    android:id="@+id/image_pizza"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza"
+                    android:layout_below="@id/image_pizza"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:textColor="#C21818"
+                    android:textSize="20sp"
+                    android:id="@+id/txt_pizza"/>
+
+                <CheckBox
+                    android:id="@+id/chk_pizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_pizza"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:buttonTint="@color/orange"
+                    android:text="Pizza"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+
+
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/pizza_cardview"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="15dp"
+            android:id="@+id/burger_cardview"
+            app:cardBackgroundColor="#D2D2D2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/burger"
+                    app:civ_border_color="#FFA000"
+                    app:civ_border_width="2.5dp"
+                    android:id="@+id/image_burger"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burger"
+                    android:layout_below="@id/image_burger"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:textColor="#C21818"
+                    android:textSize="20sp"
+                    android:id="@+id/txt_Burger"/>
+
+                <CheckBox
+                    android:id="@+id/chk_burger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_Burger"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:buttonTint="@color/orange"
+                    android:text="Pizza"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+
+
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/burger_cardview"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="15dp"
+            android:id="@+id/dhosa_cardview"
+            app:cardBackgroundColor="#D2D2D2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/dhosa"
+                    app:civ_border_color="#FFA000"
+                    app:civ_border_width="2.5dp"
+                    android:id="@+id/image_dhosa"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dhosa"
+                    android:layout_below="@id/image_dhosa"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:textColor="#C21818"
+                    android:textSize="20sp"
+                    android:id="@+id/txt_Dhosa"/>
+
+                <CheckBox
+                    android:id="@+id/chk_dhosa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_Dhosa"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:buttonTint="@color/orange"
+                    android:text="Dhosa"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+
+
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dhosa_cardview"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="15dp"
+            android:id="@+id/bhaji_cardview"
+            app:cardBackgroundColor="#D2D2D2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pow_bhaji"
+                    app:civ_border_color="#FFA000"
+                    app:civ_border_width="2.5dp"
+                    android:id="@+id/image_bhaji"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poun Bhaji"
+                    android:layout_below="@id/image_bhaji"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:textColor="#C21818"
+                    android:textSize="20sp"
+                    android:id="@+id/txt_bhaji"/>
+
+                <CheckBox
+                    android:id="@+id/chk_bhaji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_bhaji"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:buttonTint="@color/orange"
+                    android:text="Poun Bhaji"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+
+
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bhaji_cardview"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="#D2D2D2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cofee"
+                    app:civ_border_color="#FFA000"
+                    app:civ_border_width="2.5dp"
+                    android:id="@+id/image_cofee"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cofee"
+                    android:layout_below="@id/image_cofee"
+                    android:layout_alignParentLeft="true"
+                    android:textStyle="bold"
+                    android:textColor="#C21818"
+                    android:textSize="20sp"
+                    android:id="@+id/txt_cofee"/>
+
+                <CheckBox
+                    android:id="@+id/chk_cofee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_cofee"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:buttonTint="@color/orange"
+                    android:text="Cofee"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+
+
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>

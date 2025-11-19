@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:name="com.example.fragments.A_Fragment"-->
+<!--        android:id="@+id/frag1"/>-->
+
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:name="com.example.fragments.B_Fragment"-->
+<!--        android:id="@+id/frag2"/>-->
+
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:name="com.example.fragments.C_Fragment"-->
+<!--        android:layout_weight="1"-->
+<!--        android:id="@+id/frag3"/>-->
+
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:name="com.example.fragments.D_Fragment"-->
+<!--        android:id="@+id/frag4"/>-->
+
+<!--    <fragment-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:name="com.example.fragments.E_Fragment"-->
+<!--        android:id="@+id/frag5"/>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00796B"
+            android:text="Fragment A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_frag_a"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#0097A7"
+            android:text="Fragment B"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/btn_frag_b"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ff0000"
+            android:text="Fragment C"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/btn_frag_c"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#C2185B"
+            android:text="Fragment D"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/btn_frag_d"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFA000"
+            android:text=" Fragment E"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/btn_frag_e"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/fram_container"/>
+
+
+</LinearLayout>

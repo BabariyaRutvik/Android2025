@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_bmw">
+
+
+    <fragment
+        android:id="@+id/nav_bmw"
+        android:name="com.example.autohub.CarFragment.BMW_Fragment"
+        android:label="BMW"
+        tools:layout="@layout/fragment_b_m_w_"/>
+
+
+    <fragment
+        android:id="@+id/nav_audi"
+        android:name="com.example.autohub.CarFragment.Audi_Fragment"
+        android:label="Audi"
+        tools:layout="@layout/fragment_audi_"
+        />
+
+    <fragment
+        android:id="@+id/nav_mahindra"
+        android:name="com.example.autohub.CarFragment.MahindraFragment"
+        android:label="Mahindra"
+        tools:layout="@layout/fragment_mahindra"
+        />
+
+    <fragment
+        android:id="@+id/nav_hyundai"
+        android:name="com.example.autohub.CarFragment.Hyundai_Fragment"
+        android:label="Hyundai"
+        tools:layout="@layout/fragment_hyundai_"
+        />
+
+    <fragment
+        android:id="@+id/nav_toyota"
+        android:name="com.example.autohub.CarFragment.Toyota_Fragment"
+        android:label="Toyota"
+        tools:layout="@layout/fragment_toyota_"/>
+
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.example.autohub.CarFragment.Details_Fragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_details_"/>
+
+
+
+
+</navigation>

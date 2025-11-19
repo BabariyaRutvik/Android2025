@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="BMW"
+        android:id="@+id/nav_bmw"
+        android:icon="@drawable/bmwfrag"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:title="Audi"
+        android:id="@+id/nav_audi"
+        android:icon="@drawable/audifrag_"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Mahindra"
+        android:icon="@drawable/mahindrafrag_"
+        android:id="@+id/nav_mahindra"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Hyundai"
+        android:id="@+id/nav_hyundai"
+        android:icon="@drawable/hyundai"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Toyota"
+        android:id="@+id/nav_toyota"
+        android:icon="@drawable/toyotafrag"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:title="Details"
+        android:id="@+id/nav_details"
+        android:icon="@drawable/details"
+        app:showAsAction="always"/>
+
+
+</menu>

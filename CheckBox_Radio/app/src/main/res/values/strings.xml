@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CheckBox_Radio</string>
+
+    <string-array name="cities">
+        <item>Ahmedabad</item>
+        <item>Rajkot</item>
+        <item>Surat</item>
+        <item>Vadodara</item>
+        <item>Junagadh</item>
+    </string-array>
+</resources>
