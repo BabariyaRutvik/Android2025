@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="12dp"
+    android:background="@android:color/transparent"
+    android:layout_margin="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:background="#FFFFFF"
+        >
+
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Todo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/text_add_todo"
+            />
+
+        <!-- Plan and Organized Your Work Subtitle-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_subtitle_add_todo"
+            android:text="Plan and Organized Your Work"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="17dp"
+            />
+
+
+        <!-- Description -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_input_layout_add_todo_des"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            android:layout_margin="15dp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_add_todo_des"
+                android:hint="Description"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+               android:inputType="text"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Category -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_input_layout_add_todo_category"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            android:layout_margin="15dp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_add_todo_category"
+                android:hint="Category"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:inputType="text"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- Priority -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Priority"
+            android:textSize="15sp"
+            android:textColor="#111111"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"/>
+
+        <!-- Priority Chip -->
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chip_group_add_todo_priority"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_marginTop="10dp"
+            >
+            
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chip_high"
+                android:text="High"
+                android:checkable="true"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+               app:chipCornerRadius="12dp"
+                app:chipBackgroundColor="#E53935"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                />
+
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chip_medium"
+                android:text="Medium"
+                android:checkable="true"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:chipCornerRadius="12dp"
+                app:chipBackgroundColor="#FF9800"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                />
+
+
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chip_low"
+                android:text="Low"
+                android:checkable="true"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:chipCornerRadius="12dp"
+                app:chipBackgroundColor="#4CAF50"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                />
+
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+        <!-- Due Date -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:id="@+id/text_input_layout_add_todo_due_date"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_add_todo_due_date"
+                android:hint="Due Date"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+               android:focusable="false"
+                />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Add Todo"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:textAllCaps="false"
+            android:id="@+id/button_add_todo"
+            android:fontFamily="sans-serif-medium"/>
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

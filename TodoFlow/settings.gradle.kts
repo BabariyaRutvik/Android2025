@@ -19,8 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ActivityLifecycles"
-include(":app")
-include(":app")
+rootProject.name = "TodoFlow"
 include(":app")
  

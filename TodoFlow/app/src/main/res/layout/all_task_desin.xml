@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High"
+            android:padding="7dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:background="@drawable/priority_bg"
+            android:textStyle="bold"
+            android:id="@+id/text_priority_"
+            android:layout_gravity="end"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#666666"
+            android:layout_marginTop="5dp"
+            android:id="@+id/text_category" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_description"
+            android:text="Description"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#111111"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due : 25 November"
+            android:textSize="13sp"
+            android:textColor="#444444"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="6dp"
+            android:id="@+id/text_due_date" />
+
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:src="@drawable/check_blue"
+            android:visibility="gone"
+            android:id="@+id/image_check_delete" />
+
+
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

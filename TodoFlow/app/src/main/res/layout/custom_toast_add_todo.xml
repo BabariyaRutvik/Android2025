@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="14dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/toast_bg"
+    >
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/check"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/image_toast_cu_add"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Added Successfully"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/text_toast_cu_add" />
+
+
+</LinearLayout>
