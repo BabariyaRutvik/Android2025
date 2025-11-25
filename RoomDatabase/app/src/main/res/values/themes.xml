@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RoomDatabase" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        
+        <!-- Action Mode Configuration -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/Widget.RoomDatabase.ActionMode</item>
+        
+        <!-- Also set these for compatibility -->
+        <item name="actionModeBackground">@color/sky_blue</item>
+        <item name="android:actionModeBackground">@color/sky_blue</item>
+    </style>
+
+    <style name="Theme.RoomDatabase" parent="Base.Theme.RoomDatabase" />
+
+    <!-- Custom Action Mode Style -->
+    <style name="Widget.RoomDatabase.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="background">@color/sky_blue</item>
+        <item name="backgroundStacked">@color/sky_blue</item>
+        <item name="backgroundSplit">@color/sky_blue</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle</item>
+    </style>
+</resources>

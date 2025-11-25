@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="12dp"
+    app:cardUseCompatPadding="true"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Update Data"
+            android:textSize="20sp"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/text_add_data"
+            android:layout_marginTop="20dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:boxStrokeColor="#F44336"
+            app:hintTextColor="#00BCD4"
+            app:boxCornerRadiusTopStart="17dp"
+            app:boxCornerRadiusTopEnd="17dp"
+            app:boxCornerRadiusBottomStart="17dp"
+            app:boxCornerRadiusBottomEnd="17dp"
+            android:padding="12dp"
+            android:id="@+id/text_input_layout_name_update"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:id="@+id/edtname_update"
+                android:inputType="textPersonName"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:boxStrokeColor="#F44336"
+            app:hintTextColor="#00BCD4"
+            android:padding="12dp"
+            app:boxCornerRadiusTopStart="17dp"
+            app:boxCornerRadiusTopEnd="17dp"
+            app:boxCornerRadiusBottomStart="17dp"
+            app:boxCornerRadiusBottomEnd="17dp"
+            android:id="@+id/text_input_layout_roll_no_update"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Roll No"
+                android:id="@+id/edtRoll_no_update"
+                android:inputType="textPersonName"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:boxStrokeColor="#F44336"
+            app:hintTextColor="#00BCD4"
+            android:padding="12dp"
+            app:boxCornerRadiusTopStart="17dp"
+            app:boxCornerRadiusTopEnd="17dp"
+            app:boxCornerRadiusBottomStart="17dp"
+            app:boxCornerRadiusBottomEnd="17dp"
+            android:id="@+id/text_input_layout_age_update"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Age "
+                android:id="@+id/edtAge_update"
+                android:inputType="textPersonName"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:boxStrokeColor="#F44336"
+            app:hintTextColor="#00BCD4"
+            android:padding="12dp"
+            app:boxCornerRadiusTopStart="17dp"
+            app:boxCornerRadiusTopEnd="17dp"
+            app:boxCornerRadiusBottomStart="17dp"
+            app:boxCornerRadiusBottomEnd="17dp"
+            android:id="@+id/text_input_layout_course_update"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Course "
+                android:id="@+id/edt_course_update"
+                android:inputType="textPersonName"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" Update Data"
+            android:background="@drawable/button_bg"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_update_data"
+            android:backgroundTint="#009688"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>
