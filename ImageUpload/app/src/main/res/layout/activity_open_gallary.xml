@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenGallary">
+
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/image_gallary"
+        />
+
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="76dp"
+        app:layout_constraintTop_toBottomOf="@id/image_gallary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="60dp"
+        android:id="@+id/btn_gallary"
+        android:text="Open Gallary"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:backgroundTint="#FF5722"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_gallary"
+        android:text="Open Song"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="60dp"
+        android:textStyle="bold"
+        android:id="@+id/text_audio"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
