@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/alice_white"
+    android:fillViewport="true"
+    tools:context=".CredActivity.CredFragment.AddPaymentFragment">
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+
+        <!-- Add Title -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Payment"
+            android:textStyle="bold"
+            android:textSize="27sp"
+            android:textColor="@color/navy_blue"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/text_add_payment_title"
+            />
+
+
+
+        <!-- Payment Type -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Type"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="@color/navy_blue"
+            android:id="@+id/text_payment_title"
+            />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment_type_group"
+            android:layout_marginTop="10dp"
+            app:singleSelection="true"
+            >
+
+           <com.google.android.material.button.MaterialButton
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="Paid"
+               android:textSize="16dp"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               android:id="@+id/btn_paid"
+               android:backgroundTint="@color/blue"/>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Received"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/btn_received"
+                android:textAllCaps="true"
+                android:textColor="@color/sky_blue"
+                android:backgroundTint="@color/white"/>
+
+
+
+
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <!-- Payment Amount -->
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/text_input_layout_amount"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/navy_blue"
+            app:boxStrokeWidth="1dp"
+            app:endIconMode="clear_text"
+            android:hint="Amount"
+            app:startIconDrawable="@drawable/rupee_amount_cred"
+            app:hintTextColor="@color/gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_add_amount"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                app:maxLines="1"
+                android:paddingStart="50dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- Date -->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/text_input_layout_date"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/navy_blue"
+            app:boxStrokeWidth="1dp"
+            app:endIconMode="clear_text"
+            android:hint=" Select Date"
+            app:startIconDrawable="@drawable/calender_cred"
+            app:hintTextColor="@color/gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_add_date"
+                android:inputType="date"
+                android:imeOptions="actionDone"
+                app:maxLines="1"
+                android:paddingStart="50dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Note -->
+        
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/text_input_layout_note"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/navy_blue"
+            app:boxStrokeWidth="1dp"
+            app:startIconDrawable="@drawable/note_credi"
+            android:hint="Note"
+            app:hintTextColor="@color/gray"
+
+            >
+            
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_add_note"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"
+                app:maxLines="3"
+                android:paddingStart="50dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Save Payment Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_bg"
+            android:text="Save Payment"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_save_payment"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

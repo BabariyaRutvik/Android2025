@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/alice_white"
+    android:fillViewport="true"
+    tools:context=".CredActivity.CredFragment.SettingsFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+
+
+        <!-- Profile picture -->
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="@color/white"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/person_cred"
+                    android:background="@drawable/bg_circle"
+                    android:padding="13dp"
+                    app:tint="@color/navy_blue"
+                    android:id="@+id/image_user"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="16dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:textSize="18sp"
+                        android:textColor="@color/navy_blue"
+                        android:textStyle="bold"
+                        android:id="@+id/text_user_name"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="example@gmail.com"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold"
+                        android:id="@+id/text_user_email"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <!-- General Settings -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Settings"
+            android:textSize="18sp"
+            android:textColor="@color/navy_blue"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_general_settings"
+            />
+
+        <!-- Change the Password-->
+
+        
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="7dp"
+            android:id="@+id/cardChangePassword">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                >
+                
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/password"
+                    app:tint="@color/sky_blue"
+                    android:id="@+id/image_change_password"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_blue"
+                    android:textStyle="bold"
+                    android:id="@+id/text_change_password"
+                    android:layout_marginStart="18dp"
+                    />
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        
+        
+        <!-- Notification -->
+        
+        
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="7dp"
+            android:id="@+id/cardNotification">
+
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/notification_cred"
+                    app:tint="@color/sky_blue"
+                    android:id="@+id/image_notification"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Notification"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_blue"
+                    android:textStyle="bold"
+                    android:layout_marginStart="18dp"
+                    android:id="@+id/text_notification"
+                    />
+
+
+                
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumbTint="@color/sky_blue"
+                    android:trackTint="@color/sky_blue"
+                    android:id="@+id/switch_notification"
+                    />
+
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Dark Mode Switch -->
+        
+        
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="7dp"
+            android:id="@+id/cardDarkMode">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                >
+
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/dark_mode_cred"
+                    app:tint="@color/sky_blue"
+                    android:id="@+id/image_dark_mode"
+                    android:visibility="visible"/>
+
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/light_mode"
+                    app:tint="@color/sky_blue"
+                    android:id="@+id/light_mode"
+                    android:visibility="gone"/>
+
+
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dark Mode"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_blue"
+                    android:textStyle="bold"
+                    android:layout_marginStart="18dp"
+                    android:id="@+id/text_dark_mode"
+                    />
+
+
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumbTint="@color/sky_blue"
+                    android:trackTint="@color/sky_blue"
+                    android:id="@+id/switch_dark_mode"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- For Logout-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="7dp"
+            android:id="@+id/cardLogout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/logout_cred"
+                    app:tint="@color/sky_blue"
+                    android:id="@+id/image_logout"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Logout"
+                    android:textSize="16sp"
+                    android:textColor="@color/navy_blue"
+                    android:textStyle="bold"
+                    android:layout_marginStart="18dp"
+                    android:id="@+id/text_logout"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

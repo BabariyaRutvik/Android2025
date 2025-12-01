@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_add_loan"
+        android:title="Add Loan"
+        />
+
+
+    <item
+        android:id="@+id/nav_add_payment"
+        android:title="Add Payment"
+        />
+
+
+
+    <item
+        android:id="@+id/nav_loan_details"
+        android:title="Loan Details"
+        />
+
+    <item
+        android:id="@+id/nav_personal_list"
+        android:title="Personal List"
+        />
+
+
+    <item
+        android:id="@+id/nav_password_change"
+        android:title="Password Change"
+        />
+
+
+
+</menu>

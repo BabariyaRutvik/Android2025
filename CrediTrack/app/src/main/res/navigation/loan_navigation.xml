@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loan_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.creditrack.CredActivity.CredFragment.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="Home"
+
+        />
+
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.creditrack.CredActivity.CredFragment.DeshboardFragment"
+        tools:layout="@layout/fragment_deshboard"
+        android:label="Deshboard"
+        />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.creditrack.CredActivity.CredFragment.SettingsFragment"
+        tools:layout="@layout/fragment_settings"
+        android:label="Settings"
+        />
+
+
+    <fragment
+        android:id="@+id/nav_add_loan"
+        android:name="com.example.creditrack.CredActivity.CredFragment.AddLoanFragment"
+        tools:layout="@layout/fragment_add_loan"
+        android:label="Add Loan"
+        />
+
+
+    <fragment
+        android:id="@+id/nav_add_payment"
+        android:name="com.example.creditrack.CredActivity.CredFragment.AddPaymentFragment"
+        tools:layout="@layout/fragment_add_payment"
+        android:label="Add Payment"
+        />
+
+    <fragment
+        android:id="@+id/nav_loan_details"
+        android:name="com.example.creditrack.CredActivity.CredFragment.LoanDetailsFragment"
+        android:label="Loan Details"
+        tools:layout="@layout/fragment_loan_details"
+        />
+
+
+    <fragment
+        android:id="@+id/nav_personal_list"
+        android:name="com.example.creditrack.CredActivity.CredFragment.PersonalListFragment"
+        android:label="Personal List"
+        tools:layout="@layout/fragment_personal_list"
+        />
+
+    <fragment
+        android:id="@+id/nav_password_change"
+        android:name="com.example.creditrack.CredActivity.CredFragment.PasswordChangeFragment"
+        android:label="Password Change"
+        tools:layout="@layout/fragment_password_change"
+        />
+
+
+</navigation>

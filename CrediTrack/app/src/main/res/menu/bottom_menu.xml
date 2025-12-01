@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home_cred"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:title="Deshboard"
+        android:icon="@drawable/deshboard_cred"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/settings_cred"
+        app:showAsAction="always"
+        />
+
+
+
+</menu>

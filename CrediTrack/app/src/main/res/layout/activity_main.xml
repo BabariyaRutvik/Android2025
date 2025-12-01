@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".CredActivity.MainActivity">
+
+
+    <!-- Main content wrapper in Coordinator layout-->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- App Bar + Toolbar + Fragment Container -->
+
+        <include
+            layout="@layout/app_bar_loan"
+            />
+
+          <!-- Bottom Navigation view -->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_nav"
+            app:menu="@menu/bottom_menu"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:background="@drawable/bottom_nav_bg"
+            app:itemIconTint="@color/sky_blue"
+            app:itemTextColor="@color/navy_blue"
+            app:labelVisibilityMode="labeled"
+            app:itemIconSize="30dp"
+            />
+
+        
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_loan_main"
+        app:menu="@menu/nav_menu"
+        android:id="@+id/navigationview"
+        />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

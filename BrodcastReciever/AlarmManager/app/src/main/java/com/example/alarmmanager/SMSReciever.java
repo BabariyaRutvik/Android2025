@@ -33,7 +33,7 @@ public class SMSReciever extends BroadcastReceiver {
 
 
             smsManager.sendTextMessage(phoneNumber, null, "Hello from Android", null, null);
-            
+
         }
 
 

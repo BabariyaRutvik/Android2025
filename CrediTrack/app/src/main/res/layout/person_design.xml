@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="18dp"
+    app:strokeColor="@color/light_gray"
+    app:strokeWidth="1dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    app:cardBackgroundColor="@color/white"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <!-- Profile Icon Circle -->
+        <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/circle_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_person_24"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <!-- Middle Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/textPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Name"
+                android:textColor="@color/navy_blue"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textLoanDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 Jan, 2025"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <!-- Given / Taken status -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipLoanType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Given"
+                android:textSize="12sp"
+                app:chipCornerRadius="10dp"
+                app:chipBackgroundColor="@color/light_green"
+                app:chipStrokeWidth="0dp"
+                android:textColor="@color/navy_blue"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Amount -->
+        <TextView
+            android:id="@+id/textAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 5000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/navy_blue"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

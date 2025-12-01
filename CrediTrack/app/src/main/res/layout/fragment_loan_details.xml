@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/alice_white"
+    tools:context=".CredActivity.CredFragment.LoanDetailsFragment">
+
+    <!-- Top Header Card -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:layout_margin="17dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="9dp"
+        app:cardBackgroundColor="@color/sky_blue"
+        android:id="@+id/loan_details_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/textLoanAmount"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Given"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/textLoanType"
+                />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Loan Details-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="170dp"
+        android:padding="18dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp"
+            >
+            <!-- Person Name -->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textPersonName"
+                android:text="-----"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/navy_blue"
+                android:layout_marginBottom="13dp"/>
+
+            <!-- Date -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textDate"
+                android:text="-----"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="13dp"
+                android:textColor="@color/navy_blue"/>
+
+
+            <!-- Note -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textNote"
+                android:text="-----"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/navy_blue"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
