@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ff00"
+    android:padding="10dp"
+    android:layout_margin="17dp">
+
+
+
+    <ImageView
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/ic_menu_delete"
+        app:tint="@color/white"
+        android:id="@+id/image_delete_data"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Deleted Successfully"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/image_delete_data"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text_delete_data"
+        android:layout_marginStart="15dp"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
