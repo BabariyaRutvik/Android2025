@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CarePoint</string>
+    <string-array name="user_role"
+        >
+        <item>Patient</item>
+        <item>Doctor</item>
+
+
+    </string-array>
+</resources>

@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="180dp"
+    android:viewportWidth="360"
+    android:viewportHeight="180">
+
+    <!-- Bottom orange rectangle -->
+    <path
+        android:fillColor="#FF8F1F"
+        android:pathData="M0,180 H360 V40 H0 Z" />
+
+    <!-- Upward wave -->
+    <path
+        android:fillColor="#FF8F1F"
+        android:pathData="M0,40
+            C90,80 180,0 270,40
+            C315,60 360,30 360,30
+            V180 H0 Z" />
+</vector>

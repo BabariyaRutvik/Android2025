@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF6A00</color>
+    <color name="light_gray">#D9D9D9</color>
+    <color name="light_gray_200">#EEEEEE</color>
+
+    <color name="carepoint_orange">#FF8F1F</color>      <!-- Main orange -->
+    <color name="carepoint_orange_dark">#FF7A00</color> <!-- Button gradient end -->
+    <color name="carepoint_light_bg">#FFF7ED</color>    <!-- Light cream background -->
+    <color name="carepoint_white">#FFFFFF</color>
+    <color name="carepoint_text_dark">#1A1A1A</color>   <!-- Title text -->
+    <color name="carepoint_text_gray">#6E6E6E</color>   <!-- Subtext -->
+    <color name="carepoint_border">#E7E7E7</color>      <!-- Input border -->
+
+</resources>

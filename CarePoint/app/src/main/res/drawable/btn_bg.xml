@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+
+
+   <gradient
+       android:startColor="@color/carepoint_orange"
+       android:endColor="@color/carepoint_orange_dark"
+       android:angle="270"
+       />
+
+
+    <corners
+        android:radius="27dp"
+        />
+
+
+
+
+</shape>
