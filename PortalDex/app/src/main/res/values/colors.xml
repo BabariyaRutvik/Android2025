@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="test_red">#FF0000</color>
+    <color name="test_green">#00FF00</color>
+    <color name="blue_border">#2196F3</color>
+    <color name="status_alive">#2E7D32</color> <!-- Green -->
+    <color name="status_dead">#C62828</color> <!-- Red -->
+    <color name="status_unknown">#F9A825</color> <!-- Yellow/Amber -->
+</resources>
