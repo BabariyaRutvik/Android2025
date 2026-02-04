@@ -2,6 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Warm Theme Colors -->
+    <color name="primary_warm">#D84315</color> <!-- Deep Orange 800 -->
+    <color name="primary_container_warm">#FFCCBC</color>
+    <color name="secondary_warm">#EF6C00</color> <!-- Orange 800 -->
+    <color name="tertiary_warm">#F9A825</color> <!-- Yellow 800 -->
+    <color name="background_warm">#FFF8E1</color> <!-- Amber 50 -->
+    <color name="surface_warm">#FFFBF2</color>
+
     <color name="blue_button">#2158A7</color>
     <color name="text_gray">#757575</color>
 </resources>

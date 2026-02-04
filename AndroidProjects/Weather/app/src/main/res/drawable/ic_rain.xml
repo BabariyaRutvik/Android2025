@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Cloud -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M75,60c0,8.28 -6.72,15 -15,15H40c-8.28,0 -15,-6.72 -15,-15c0,-7.15 5,-13.13 11.69,-14.63C38.03,40.1 43.7,35 50.5,35c7.95,0 14.5,6.55 14.5,14.5c0,0.52 -0.03,1.03 -0.08,1.54C70.67,51.94 75,55.46 75,60z" />
+    <!-- Rain Drops -->
+    <path
+        android:fillColor="#4E95FF"
+        android:pathData="M35,80l-2,8M50,85l-2,8M65,80l-2,8"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeColor="#4E95FF"/>
+</vector>

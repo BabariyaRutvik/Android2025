@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue"
+    android:fillViewport="true"
+    tools:context=".WeatherActivity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Outer Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_card"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <!-- Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:id="@+id/text_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawablePadding="8dp"
+                    android:text="Location"
+                    android:textColor="@color/text_dark_blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image_more"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_more_vert"
+                    app:tint="@color/primary_blue" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="Monday 1, January 10 : 00"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <!-- Main Weather Card -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_main_bg"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_main_card"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/text_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="22°"
+                    android:textColor="@color/white"
+                    android:textSize="110sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image_weather"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/ic_sun_cloud"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginBottom="-10dp" />
+
+                <TextView
+                    android:id="@+id/text_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mostly\nClear"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="end"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="30dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Stats Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/card_bg_light"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_umbrella" app:tint="@color/primary_blue"/>
+                    <TextView android:id="@+id/tv_precip_val" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30%" android:textStyle="bold" android:textColor="@color/text_dark_blue"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Precipitation" android:textSize="10sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_humidity" app:tint="@color/primary_blue"/>
+                    <TextView android:id="@+id/tv_humidity_val" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20%" android:textStyle="bold" android:textColor="@color/text_dark_blue"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Humidity" android:textSize="10sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_wind_speed" app:tint="@color/primary_blue"/>
+                    <TextView android:id="@+id/tv_wind_val" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12 km/h" android:textStyle="bold" android:textColor="@color/text_dark_blue"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wind speed" android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Hourly Section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textColor="@color/text_dark_blue"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_7day_forecast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="7-Day Forecasts >"
+                    android:textColor="@color/primary_blue" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_hourly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_hourly_forecast" />
+
+            <!-- Other Cities -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:text="Other Cities"
+                android:textColor="@color/text_dark_blue"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_main_card"
+                android:padding="15dp">
+                <ImageView android:id="@+id/iv_city_icon" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_cloud"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/iv_city_icon" android:layout_marginStart="10dp" android:text="London" android:textColor="@color/white" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="21°" android:textColor="@color/accent_yellow" android:textSize="24sp" android:textStyle="bold"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
