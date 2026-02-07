@@ -4,10 +4,9 @@ import java.util.List;
 
 public class ForecastDay {
     private String date;
-    private long date_epoch;
     private Day day;
-    private List<Hour> hour;
     private Astro astro;
+    private List<Hour> hour;
 
     public String getDate() {
         return date;
@@ -15,14 +14,6 @@ public class ForecastDay {
 
     public void setDate(String date) {
         this.date = date;
-    }
-
-    public long getDate_epoch() {
-        return date_epoch;
-    }
-
-    public void setDate_epoch(long date_epoch) {
-        this.date_epoch = date_epoch;
     }
 
     public Day getDay() {
@@ -33,19 +24,19 @@ public class ForecastDay {
         this.day = day;
     }
 
-    public List<Hour> getHour() {
-        return hour;
-    }
-
-    public void setHour(List<Hour> hour) {
-        this.hour = hour;
-    }
-
     public Astro getAstro() {
         return astro;
     }
 
     public void setAstro(Astro astro) {
         this.astro = astro;
+    }
+
+    public List<Hour> getHour() {
+        return hour;
+    }
+
+    public void setHour(List<Hour> hour) {
+        this.hour = hour;
     }
 }

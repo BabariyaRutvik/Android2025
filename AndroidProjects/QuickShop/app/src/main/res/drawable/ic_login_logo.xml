@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Abstract Shopping Bag / Q Shape -->
+    <path
+        android:pathData="M30,35C30,25 38,18 48,18L52,18C62,18 70,25 70,35V40H30V35Z"
+        android:strokeWidth="4"
+        android:strokeColor="#6366F1" />
+    <path
+        android:pathData="M25,40H75V70C75,81 66,90 55,90H45C34,90 25,81 25,70V40Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="50"
+                android:centerY="65"
+                android:gradientRadius="40"
+                android:type="radial">
+                <item android:offset="0" android:color="#818CF8" />
+                <item android:offset="1" android:color="#6366F1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Lightning Bolt for "Quick" -->
+    <path
+        android:pathData="M55,48L42,65H52L45,82L58,65H48L55,48Z"
+        android:fillColor="#FFFFFF" />
+</vector>

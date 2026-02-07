@@ -2,15 +2,11 @@ package com.example.weather.WeatherPOJO;
 
 public class Astro
 {
-    private  String sunrise;
-    private  String sunset;
-    private  String moonrise;
-    private  String moonset;
-    private  String moon_phase;
-    private  String moon_illumination;
-
-    // getter and setter
-
+    private String sunrise;
+    private String sunset;
+    private String moonrise;
+    private String moonset;
+    private String moon_phase;
 
     public String getSunrise() {
         return sunrise;
@@ -50,13 +46,5 @@ public class Astro
 
     public void setMoon_phase(String moon_phase) {
         this.moon_phase = moon_phase;
-    }
-
-    public String getMoon_illumination() {
-        return moon_illumination;
-    }
-
-    public void setMoon_illumination(String moon_illumination) {
-        this.moon_illumination = moon_illumination;
     }
 }

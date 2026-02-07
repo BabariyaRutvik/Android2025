@@ -4,14 +4,15 @@ public class Condition
 {
     private String text;
     private String icon;
-    private int code;
+    private String code;
 
+    // Getter and setter methods for condition properties
 
-    // getter and setter
 
     public String getText() {
         return text;
     }
+
     public void setText(String text) {
         this.text = text;
     }
@@ -24,11 +25,11 @@ public class Condition
         this.icon = icon;
     }
 
-    public int getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(String code) {
         this.code = code;
     }
 }

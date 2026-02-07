@@ -1,145 +1,38 @@
 package com.example.weather.WeatherPOJO;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Current
 {
-    private  long last_updated_epoch;
-    private  String last_updated;
-    private  double temp_c;
-    private double temp_f;
-    private  int is_day;
-    private  Condition condition;
-    private  double wind_mph;
-    private  double wind_kph;
-    private  int wind_degree;
-    private  String wind_dir;
-    private  double pressure_mb;
-    private  double pressure_in;
-    private  double precip_mm;
-    private  double precip_in;
+    private double temperature;
+    private double feels_like;
     private  int humidity;
-    private  int cloud;
-    private  double feelslike_c;
-    private  double feelslike_f;
-    private  double vis_km;
-    private  double vis_miles;
-    private  double uv;
+    private int pressure;
+    private int visibility;
 
-    private  double gust_mph;
-    private  double gust_kph;
+    private int uv_index;
+    private double wind_speed;
+    private  int wind_degree;
+    private String wind_direction;
+    private  int is_day;
+    private String last_updated;
+    private Condition condition;
 
-    // getter and setter
 
-
-    public long getLast_updated_epoch() {
-        return last_updated_epoch;
+    public double getTemperature() {
+        return temperature;
     }
 
-    public void setLast_updated_epoch(long last_updated_epoch) {
-        this.last_updated_epoch = last_updated_epoch;
+    public void setTemperature(double temperature) {
+        this.temperature = temperature;
     }
 
-    public String getLast_updated() {
-        return last_updated;
+    public double getFeels_like() {
+        return feels_like;
     }
 
-    public void setLast_updated(String last_updated) {
-        this.last_updated = last_updated;
-    }
-
-    public double getTemp_c() {
-        return temp_c;
-    }
-
-    public void setTemp_c(double temp_c) {
-        this.temp_c = temp_c;
-    }
-
-    public double getTemp_f() {
-        return temp_f;
-    }
-
-    public void setTemp_f(double temp_f) {
-        this.temp_f = temp_f;
-    }
-
-    public int getIs_day() {
-        return is_day;
-    }
-
-    public void setIs_day(int is_day) {
-        this.is_day = is_day;
-    }
-
-    public Condition getCondition() {
-        return condition;
-    }
-
-    public void setCondition(Condition condition) {
-        this.condition = condition;
-    }
-
-    public double getWind_mph() {
-        return wind_mph;
-    }
-
-    public void setWind_mph(double wind_mph) {
-        this.wind_mph = wind_mph;
-    }
-
-    public double getWind_kph() {
-        return wind_kph;
-    }
-
-    public void setWind_kph(double wind_kph) {
-        this.wind_kph = wind_kph;
-    }
-
-    public int getWind_degree() {
-        return wind_degree;
-    }
-
-    public void setWind_degree(int wind_degree) {
-        this.wind_degree = wind_degree;
-    }
-
-    public String getWind_dir() {
-        return wind_dir;
-    }
-
-    public void setWind_dir(String wind_dir) {
-        this.wind_dir = wind_dir;
-    }
-
-    public double getPressure_mb() {
-        return pressure_mb;
-    }
-
-    public void setPressure_mb(double pressure_mb) {
-        this.pressure_mb = pressure_mb;
-    }
-
-    public double getPressure_in() {
-        return pressure_in;
-    }
-
-    public void setPressure_in(double pressure_in) {
-        this.pressure_in = pressure_in;
-    }
-
-    public double getPrecip_mm() {
-        return precip_mm;
-    }
-
-    public void setPrecip_mm(double precip_mm) {
-        this.precip_mm = precip_mm;
-    }
-
-    public double getPrecip_in() {
-        return precip_in;
-    }
-
-    public void setPrecip_in(double precip_in) {
-        this.precip_in = precip_in;
+    public void setFeels_like(double feels_like) {
+        this.feels_like = feels_like;
     }
 
     public int getHumidity() {
@@ -150,67 +43,75 @@ public class Current
         this.humidity = humidity;
     }
 
-    public int getCloud() {
-        return cloud;
+    public int getPressure() {
+        return pressure;
     }
 
-    public void setCloud(int cloud) {
-        this.cloud = cloud;
+    public void setPressure(int pressure) {
+        this.pressure = pressure;
     }
 
-    public double getFeelslike_c() {
-        return feelslike_c;
+    public int getVisibility() {
+        return visibility;
     }
 
-    public void setFeelslike_c(double feelslike_c) {
-        this.feelslike_c = feelslike_c;
+    public void setVisibility(int visibility) {
+        this.visibility = visibility;
     }
 
-    public double getFeelslike_f() {
-        return feelslike_f;
+    public int getUv_index() {
+        return uv_index;
     }
 
-    public void setFeelslike_f(double feelslike_f) {
-        this.feelslike_f = feelslike_f;
+    public void setUv_index(int uv_index) {
+        this.uv_index = uv_index;
     }
 
-    public double getVis_km() {
-        return vis_km;
+    public double getWind_speed() {
+        return wind_speed;
     }
 
-    public void setVis_km(double vis_km) {
-        this.vis_km = vis_km;
+    public void setWind_speed(double wind_speed) {
+        this.wind_speed = wind_speed;
     }
 
-    public double getVis_miles() {
-        return vis_miles;
+    public int getWind_degree() {
+        return wind_degree;
     }
 
-    public void setVis_miles(double vis_miles) {
-        this.vis_miles = vis_miles;
+    public void setWind_degree(int wind_degree) {
+        this.wind_degree = wind_degree;
     }
 
-    public double getUv() {
-        return uv;
+    public String getWind_direction() {
+        return wind_direction;
     }
 
-    public void setUv(double uv) {
-        this.uv = uv;
+    public void setWind_direction(String wind_direction) {
+        this.wind_direction = wind_direction;
     }
 
-    public double getGust_mph() {
-        return gust_mph;
+    public int getIs_day() {
+        return is_day;
     }
 
-    public void setGust_mph(double gust_mph) {
-        this.gust_mph = gust_mph;
+    public void setIs_day(int is_day) {
+        this.is_day = is_day;
     }
 
-    public double getGust_kph() {
-        return gust_kph;
+    public String getLast_updated() {
+        return last_updated;
     }
 
-    public void setGust_kph(double gust_kph) {
-        this.gust_kph = gust_kph;
+    public void setLast_updated(String last_updated) {
+        this.last_updated = last_updated;
+    }
+
+    public Condition getCondition() {
+        return condition;
+    }
+
+    public void setCondition(Condition condition) {
+        this.condition = condition;
     }
 }

@@ -4,7 +4,9 @@ plugins {
 
 android {
     namespace = "com.example.weather"
-    compileSdk = 36
+    compileSdk {
+        version = release(36)
+    }
 
     defaultConfig {
         applicationId = "com.example.weather"
@@ -29,9 +31,6 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
@@ -40,18 +39,21 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 
-    // Networking
+    // Retrofit
     implementation(libs.retrofit)
-    implementation(libs.retrofit.gson)
+    implementation(libs.retrofit.converter.gson)
+
+    // Glide
+    implementation(libs.glide)
+    annotationProcessor(libs.glide.compiler)
+
+    // OkHttp
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging)
 
-    // Database (Room)
+    // Room
     implementation(libs.room.runtime)
     annotationProcessor(libs.room.compiler)
-
-    // Image Loading
-    implementation(libs.glide)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

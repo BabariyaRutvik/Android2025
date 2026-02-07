@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuickShop</string>
+    <string name="default_web_client_id">463350675514-fgkmkk4a8dvp68hh31ta43qliibr04qv.apps.googleusercontent.com</string>
+
+    <!-- Facebook Login -->
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string>
+    <string name="fb_login_protocol_scheme">fbYOUR_FACEBOOK_APP_ID</string>
+    <string name="facebook_client_token">YOUR_FACEBOOK_CLIENT_TOKEN</string>
+</resources>

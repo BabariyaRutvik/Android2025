@@ -6,6 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/weather_splash"
-    tools:context=".WeatherActivity.SplashScreen">
+    tools:context=".WeatherActivity.SplashScreenActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

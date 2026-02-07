@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Mon"
+        android:textColor="@color/primary_blue"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_forecast_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_sun_cloudy" />
+
+    <TextView
+        android:id="@+id/tv_forecast_condition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="Mostly clear"
+        android:textColor="@color/primary_blue"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_forecast_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 / 16"
+        android:textColor="@color/primary_blue"
+        android:textSize="14sp" />
+
+</LinearLayout>

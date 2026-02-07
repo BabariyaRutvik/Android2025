@@ -4,12 +4,12 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Weather App Theme Colors -->
-    <color name="bg_blue">#D1E4FF</color>
-    <color name="primary_blue">#4E95FF</color>
-    <color name="primary_blue_dark">#1D6AFF</color>
-    <color name="text_dark_blue">#1A3B70</color>
-    <color name="text_secondary">#78909C</color>
-    <color name="accent_yellow">#FFD600</color>
-    <color name="card_bg_light">#F0F7FF</color>
-    <color name="divider_blue">#B3D4FF</color>
+    <color name="bg_light_blue">#D1E4FF</color>
+    <color name="primary_blue">#4A90E2</color>
+    <color name="secondary_blue">#5096FF</color>
+    <color name="text_dark_blue">#1E3A8A</color>
+    <color name="soft_card_white">#F8FAFF</color>
+    <color name="accent_blue">#60A5FA</color>
+    <color name="sun_yellow">#FBBF24</color>
+    <color name="forecast_card_blue">#8EBBFF</color>
 </resources>

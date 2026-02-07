@@ -7,11 +7,11 @@ public class Location
     private String country;
     private double lat;
     private double lon;
-    private String tz_id;
-    private long localtime_epoch;
-    private String localtime;
+   private String timezone;
+   private String localtime;
 
-    // getter and setter
+    // Getter and setter methods for location properties
+
 
     public String getName() {
         return name;
@@ -53,20 +53,12 @@ public class Location
         this.lon = lon;
     }
 
-    public String getTz_id() {
-        return tz_id;
+    public String getTimezone() {
+        return timezone;
     }
 
-    public void setTz_id(String tz_id) {
-        this.tz_id = tz_id;
-    }
-
-    public long getLocaltime_epoch() {
-        return localtime_epoch;
-    }
-
-    public void setLocaltime_epoch(long localtime_epoch) {
-        this.localtime_epoch = localtime_epoch;
+    public void setTimezone(String timezone) {
+        this.timezone = timezone;
     }
 
     public String getLocaltime() {
