@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "15620794988",
+    "project_id": "rutvikproduct1013",
+    "storage_bucket": "rutvikproduct1013.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15620794988:android:7a5c87c43bc30f99d10649",
+        "android_client_info": {
+          "package_name": "com.example.producthub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGPJsqNI50WnaHpiwEk0lsTB5IOtO6yjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
