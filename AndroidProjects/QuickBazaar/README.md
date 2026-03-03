@@ -1,19 +1,19 @@
-# QuickBazaar 🛒✨
+# QuickBazaar - Your AI-Powered Grocery App 🥦🍎🛒✨
 
-QuickBazaar is a modern Android e-commerce application integrated with an **AI-powered assistant** using the Google Gemini API. It offers a seamless shopping experience with real-time data synchronization via Firebase.
+QuickBazaar is a modern Android **Grocery Delivery Application** integrated with an **AI-powered assistant** using the Google Gemini API. It offers a seamless grocery shopping experience with real-time data synchronization via Firebase.
 
 ---
 
 ## 🚀 Features
 
-- **AI Chat Assistant**: Integrated Gemini AI to help users with product queries, cooking tips, and health advice.
+- **AI Grocery Assistant**: Integrated Gemini AI to help users with grocery product queries, cooking recipes, healthy eating tips, and smart shopping lists.
 - **User Authentication**: Secure Login and Signup using Firebase Authentication (including Google Sign-In support).
-- **Product Catalog**: Browse products by categories with a clean and responsive UI.
-- **Shopping Cart**: Add/remove items, manage quantities, and real-time price calculation.
-- **Order Management**: Track order history and view order status (Pending/Delivered).
+- **Grocery Catalog**: Browse fresh vegetables, fruits, and daily essentials by categories with a clean and responsive UI.
+- **Shopping Cart**: Add/remove groceries, manage quantities, and real-time total calculation.
+- **Order Tracking**: Track your grocery orders and view status (Pending/Delivered).
 - **Firestore Integration**: All user data and AI chat history are securely stored in Firebase Firestore.
-- **Push Notifications**: Integrated Firebase Cloud Messaging (FCM) for updates.
-- **Smooth UI**: Powered by ViewBinding, Lottie Animations, and Material Design.
+- **Push Notifications**: Integrated Firebase Cloud Messaging (FCM) for order updates and deals.
+- **Smooth UI**: Powered by ViewBinding, Lottie Animations, and Material Design for a fresh grocery shopping feel.
 
 ---
 
