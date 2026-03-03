@@ -35,7 +35,7 @@ To get this project running locally, follow these steps:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/BabariyaRutvik/Android2025.git
+git clone [YOUR_REPOSITORY_LINK_HERE]
 ```
 
 ### 2. Add Firebase Configuration
